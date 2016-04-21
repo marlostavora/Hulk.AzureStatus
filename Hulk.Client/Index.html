@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Status - by Marlos Távora</title>
+	<meta charset="utf-8" />
+
+    <!-- Style sheets -->    
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+
+</head>
+<body ng-app="azureStatus" ng-controller="MainCtrl as vm">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Azure Status - by Marlos Távora</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form ng-hide="vm.isLoggedIn()" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" placeholder="Email" class="form-control" ng-model="vm.userData.email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-control" ng-model="vm.userData.password">
+                    </div>
+                    <button type="submit" class="btn btn-success" ng-click="vm.login()">Login</button>
+                    <button type="submit" class="btn btn-default" ng-click="vm.registerUser()">Register</button>
+                </form>
+            </div>        
+        </div>
+    </nav>
+    
+    <div class="alert alert-danger alert-top" ng-show="vm.message">
+        <strong>Attention!</strong> {{ vm.message }}.
+    </div>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-md-6">
+                <h1>Azure Status</h1>
+                <p>This is a project developed by Marlos Távora that shows the status of Microsoft Azure services. They were used in developing technologies such as ASP.NET MVC 4.5, ASP.NET Web API, Entity Framework 6, Ninject Ioc, AngularJS Core 1.5, AngularJS Resource 1.5., Bootstrap 3.3.6, WebActivator, CORS, Token-based Authentication , OAuth2 and pattern such as Unit of work, Repository, POCO and MVC.</p>
+                <button ng-if="vm.isLoggedIn()" type="submit" class="btn btn-primary btn-lg" ng-click="vm.sendEmail()">Send e-mail &raquo;</button>
+            </div>
+            <div class="col-md-6">
+                <img src="Content/Images/world-azure.png" />
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="container" ng-include="'app/email/emailView.html'">
+       
+    </div>-->
+
+    <div class="container" ng-if="vm.isLoggedIn()">
+        <div class="alert alert-info">            
+            <span class="text-success glyphicon glyphicon-ok"> Good</span> 
+            <span class="text-warning glyphicon glyphicon-warning-sign"  style="margin-left:5px;"> Warning</span> 
+            <span class="text-danger glyphicon glyphicon-exclamation-sign"  style="margin-left:5px;"> Error</span> 
+            <span class="text-info glyphicon glyphicon-info-sign"  style="margin-left:5px;"> Information</span> 
+        </div>
+
+        <div 
+             ng-include="'app/status/statusListView.html'">
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&hearts; Developed in 2016.</p>
+        </footer>
+    </div><!-- /container -->
+    
+    <!-- Commom Scripts -->
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/site.js"></script>
+
+    <!-- Library Scripts -->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    <!-- Services -->
+    <script src="common/common.services.js"></script>
+    <script src="common/statusResource.js"></script>
+    <script src="common/userAccount.js"></script>
+    <script src="common/currentUser.js"></script>
+    <script src="common/emailResource.js"></script>
+
+    <!-- Controllers -->
+    <script src="app/status/statusListCtrl.js"></script>
+    <script src="app/email/emailCtrl.js"></script>
+    <script src="app/mainCtrl.js"></script>    
+</body>
+</html>

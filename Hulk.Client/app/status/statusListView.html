@@ -1,0 +1,26 @@
+﻿<div class="painel"
+     ng-controller="StatusListCtrl as vm">
+
+    <div class="alert alert-danger" ng-show="vm.message">
+        <strong>Attention!</strong> {{ vm.message }}.
+    </div>
+  
+    <div class="table-responsive">
+       <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th></th>
+                <th class="vertical" style="width: 150px;"  ng-repeat="region in vm.servicesStatus.regions"> {{ region.name }} </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-nowrap" ng-repeat="service in vm.servicesStatus.services">
+                <td>{{ service.name }}</td>
+                <td ng-repeat="region in service.regions">
+                    <span ng-class="vm.getClass(region.status)" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+</div>
