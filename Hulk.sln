@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.WebAPI", "Hulk\Hulk.WebAPI\Hulk.WebAPI.csproj", "{88B7E868-268A-438C-9968-26930A52C957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Model", "Hulk\Hulk.Model\Hulk.Model.csproj", "{BAC91BB0-E6A5-4538-9399-82D28BB45DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Repository", "Hulk\Hulk.Repository\Hulk.Repository.csproj", "{0D2CAE3B-7C34-462D-AF03-309A51148973}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Common", "Hulk\Hulk.Common\Hulk.Common.csproj", "{41327D29-A583-4D3F-96A0-61905C4400FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5B30D76C-E4AC-4E60-B2D8-50FDCECAE374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Common.Test", "Hulk\Hulk.Common.Test\Hulk.Common.Test.csproj", "{33ECA6BE-419E-49C7-B279-83BCD357D841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.WebAPI.Test", "Hulk\Hulk.WebAPI.Test\Hulk.WebAPI.Test.csproj", "{719039CE-5E4C-441B-A400-713F6B308D44}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hulk.Client", "Hulk.Client", "{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_15627"
+		Debug.AspNetCompiler.PhysicalPath = "Hulk.Client\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_15627\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_15627"
+		Release.AspNetCompiler.PhysicalPath = "Hulk.Client\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_15627\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "15627"
+		SlnRelativePath = "Hulk.Client\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Repository.Contracts", "Hulk\Hulk.Repository.Contracts\Hulk.Repository.Contracts.csproj", "{9E95F28A-BA3E-47CE-83A8-926AC314F673}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88B7E868-268A-438C-9968-26930A52C957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88B7E868-268A-438C-9968-26930A52C957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88B7E868-268A-438C-9968-26930A52C957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88B7E868-268A-438C-9968-26930A52C957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC91BB0-E6A5-4538-9399-82D28BB45DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC91BB0-E6A5-4538-9399-82D28BB45DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC91BB0-E6A5-4538-9399-82D28BB45DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC91BB0-E6A5-4538-9399-82D28BB45DCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D2CAE3B-7C34-462D-AF03-309A51148973}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D2CAE3B-7C34-462D-AF03-309A51148973}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D2CAE3B-7C34-462D-AF03-309A51148973}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D2CAE3B-7C34-462D-AF03-309A51148973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41327D29-A583-4D3F-96A0-61905C4400FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41327D29-A583-4D3F-96A0-61905C4400FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41327D29-A583-4D3F-96A0-61905C4400FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41327D29-A583-4D3F-96A0-61905C4400FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33ECA6BE-419E-49C7-B279-83BCD357D841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33ECA6BE-419E-49C7-B279-83BCD357D841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33ECA6BE-419E-49C7-B279-83BCD357D841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33ECA6BE-419E-49C7-B279-83BCD357D841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{719039CE-5E4C-441B-A400-713F6B308D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{719039CE-5E4C-441B-A400-713F6B308D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{719039CE-5E4C-441B-A400-713F6B308D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{719039CE-5E4C-441B-A400-713F6B308D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9E95F28A-BA3E-47CE-83A8-926AC314F673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E95F28A-BA3E-47CE-83A8-926AC314F673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E95F28A-BA3E-47CE-83A8-926AC314F673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E95F28A-BA3E-47CE-83A8-926AC314F673}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33ECA6BE-419E-49C7-B279-83BCD357D841} = {5B30D76C-E4AC-4E60-B2D8-50FDCECAE374}
+		{719039CE-5E4C-441B-A400-713F6B308D44} = {5B30D76C-E4AC-4E60-B2D8-50FDCECAE374}
+	EndGlobalSection
+EndGlobal
