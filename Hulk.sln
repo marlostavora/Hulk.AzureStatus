@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Common.Test", "Hulk\Hu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.WebAPI.Test", "Hulk\Hulk.WebAPI.Test\Hulk.WebAPI.Test.csproj", "{719039CE-5E4C-441B-A400-713F6B308D44}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hulk.Client", "Hulk.Client", "{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hulk.Client", "Hulk.Client\", "{E8BCF5FB-F04B-405C-B4D4-CF3F71EAE14E}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_15627"
@@ -40,6 +40,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Hulk.Client", "Hulk.Client"
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hulk.Repository.Contracts", "Hulk\Hulk.Repository.Contracts\Hulk.Repository.Contracts.csproj", "{9E95F28A-BA3E-47CE-83A8-926AC314F673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{77B4E785-419F-48FA-A379-2625B71BB09C}"
+	ProjectSection(SolutionItems) = preProject
+		.vs\config\applicationhost.config = .vs\config\applicationhost.config
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
