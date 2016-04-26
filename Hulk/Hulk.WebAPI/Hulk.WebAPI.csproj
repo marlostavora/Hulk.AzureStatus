@@ -277,7 +277,6 @@
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Services\AzureStatusService.cs" />
     <Compile Include="Services\AzureStatusTimer.cs" />
-    <Compile Include="Services\EmailService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModel\RegionStatusVM.cs" />
     <Compile Include="ViewModel\RegionVM.cs" />
@@ -356,6 +355,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Hulk.Common\Hulk.Common.csproj">
+      <Project>{41327d29-a583-4d3f-96a0-61905c4400fc}</Project>
+      <Name>Hulk.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Hulk.Model\Hulk.Model.csproj">
       <Project>{bac91bb0-e6a5-4538-9399-82d28bb45dcc}</Project>
       <Name>Hulk.Model</Name>

@@ -1,4 +1,5 @@
-﻿using Hulk.Model;
+﻿using Hulk.Common;
+using Hulk.Model;
 using Hulk.Repository.Contracts;
 using Hulk.WebAPI.Models;
 using Hulk.WebAPI.Services;
@@ -119,7 +120,7 @@ namespace Hulk.WebAPI.Controllers
                 string body = GetEmailBody(String.IsNullOrEmpty(emailData.Message) ? "" : emailData.Message);
                 //
 
-                EmailService.SendEmail(host, emailFrom, emailData.Email, subject, body, user, password, port);
+                EmailHelper.SendEmail(host, emailFrom, emailData.Email, subject, body, user, password, port);
 
                 return Ok();
             }

@@ -6,9 +6,9 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hulk.WebAPI.Services
+namespace Hulk.Common
 {
-    public static class EmailService
+    public static class EmailHelper
     {
         public static void SendEmail(string host, string emailFrom, string emailTo, string subject, string body, string user, string password, int port, bool sll = true, bool useDefaultCredentials = false)
         {
